@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/all"
+    tools:context="com.example.bharath.cropremainder.AdminUpload">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Upload Crop Details"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/darkgreen"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cname"
+                android:padding="15dp"
+                android:hint="Enter Crop Name"
+                android:textColorHint="@color/darkgreen"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/month"
+                android:background="@color/royalBlue"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/soil"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/prec"
+                android:padding="15dp"
+                android:hint="Enter Information"
+                android:textColorHint="@color/darkgreen"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload"
+                android:id="@+id/upload"
+                android:onClick="reg"
+                android:textColorHint="@color/darkgreen"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
